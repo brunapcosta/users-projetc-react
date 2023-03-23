@@ -17,6 +17,11 @@ export const Image = styled.img`
     margin-top: 30px;
 `;
 
+export const Ul = styled.ul`
+    margin-bottom: 100px;
+
+`;
+
 export const User = styled.li`
     display: flex;
     justify-content: space-around;

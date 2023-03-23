@@ -29,6 +29,10 @@ export const InputLabel = styled.p`
     margin-left: 25px;
 `;
 
+export const Div = styled.div`
+    margin-bottom: 130px;
+`;
+
 export const Input = styled.input`
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

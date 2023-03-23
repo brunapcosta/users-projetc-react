@@ -21,7 +21,8 @@ import Button from "../../Components/Button";
 import {
   Container,
   Image,
-  User
+  User,
+  Ul
 } from "./styles";
 
 function Users() {
@@ -61,7 +62,7 @@ function Users() {
       <ContainerItems isBlur={true}>
         <H1>Usuários</H1>
 
-        <ul>
+        <Ul>
           {users.map(user => (
             <User key={user.id}>
               <p>{user.name}</p> <p>{user.age}</p>
@@ -70,7 +71,7 @@ function Users() {
               </button>
             </User>
           ))}
-        </ul>
+        </Ul>
 
         <Button isBack={true} onClick={goBackPage}>
           <img alt="Seta" src={Arrow} /> Voltar

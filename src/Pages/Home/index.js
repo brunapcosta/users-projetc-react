@@ -30,6 +30,7 @@ import Button from "../../Components/Button";
 import {
   Container,
   Image,
+  Div,
   InputLabel,
   Input,
 } from "./styles";
@@ -69,14 +70,15 @@ function App() {
       <Image alt="logo-image" src={People} />
       <ContainerItems>
         <H1>Olá!</H1>
+        <Div>
+          <InputLabel>Nome</InputLabel>
+          {/* <Input onChange={changeInputName} placeholder="Nome" /> */}
+          <Input ref={inputName} placeholder="Nome" />
 
-        <InputLabel>Nome</InputLabel>
-        {/* <Input onChange={changeInputName} placeholder="Nome" /> */}
-        <Input ref={inputName} placeholder="Nome" />
-
-        <InputLabel>Idade</InputLabel>
-        {/* <Input onChange={changeInputAge} placeholder="Idade" /> */}
-        <Input ref={inputAge} placeholder="Idade" />
+          <InputLabel>Idade</InputLabel>
+          {/* <Input onChange={changeInputAge} placeholder="Idade" /> */}
+          <Input ref={inputAge} placeholder="Idade" />
+        </Div>
 
         <Button onClick={addNewUser}>
           Cadastrar <img alt="Seta" src={Arrow} />
